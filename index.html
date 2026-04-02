@@ -287,10 +287,10 @@ var Q = [
     key: "governance",
     text: "How would you describe the governance mechanisms currently guiding your most important project?",
     opts: [
-      {t: "Predominantly formal governance mechanisms — structured policies, documented processes, and clearly defined accountability frameworks guide how decisions are made and reviewed across the project.", g: 0},
-      {t: "Predominantly informal governance mechanisms — decisions and accountability are guided mainly by relationships, experience, and unwritten norms rather than documented structures or formal processes.", g: 1},
-      {t: "Formal structure exists but informal norms dominate — a governance framework is in place on paper, but how decisions are actually made day-to-day operates largely outside it.", g: 1},
-      {t: "Minimal or absent — governance was not a primary consideration when the project was set up and has developed reactively as issues have emerged.", g: 2}
+      {t: "Formal — structured policies, documented processes, and clear accountability frameworks guide all key decisions.", g: 0},
+      {t: "Informal — decisions are guided mainly by relationships and unwritten norms rather than documented structures.", g: 1},
+      {t: "Mixed — a formal framework exists on paper but decisions are made informally day-to-day.", g: 1},
+      {t: "Minimal or absent — governance developed reactively as issues emerged rather than being designed upfront.", g: 2}
     ]
   },
   /* Q5 — Pre-project learning */
@@ -299,10 +299,10 @@ var Q = [
     key: "pre_learning",
     text: "How often does your organisation learn from similar projects before starting a new project?",
     opts: [
-      {t: "Always — we systematically review lessons, decisions, and outcomes from comparable projects and apply those findings before the new project begins.", g: 0},
-      {t: "Sometimes — we refer to previous projects informally when relevant, but there is no structured process for doing so consistently.", g: 1},
-      {t: "Rarely — we occasionally draw on past experience, but previous project knowledge is not formally captured or made accessible.", g: 2},
-      {t: "Never — each project starts fresh; past project knowledge is not systematically reviewed or applied.", g: 2}
+      {t: "Always — we systematically review lessons and outcomes from comparable projects before starting.", g: 0},
+      {t: "Sometimes — we refer to previous projects informally but there is no structured process.", g: 1},
+      {t: "Rarely — past project knowledge is not formally captured or made accessible.", g: 2},
+      {t: "Never — each project starts fresh with no review of previous project knowledge.", g: 2}
     ]
   },
   /* Q6 — How decisions are made when a problem is encountered */
@@ -311,10 +311,10 @@ var Q = [
     key: "problem_dec",
     text: "When your project encounters an unexpected problem, how does your team typically approach making a decision about it?",
     opts: [
-      {t: "Analytically — the team first defines the problem carefully, draws on experience from similar situations in past projects, seeks input from relevant individuals and the wider team, and then evaluates options before deciding.", g: 0},
-      {t: "Consultatively — we gather individual and team views before deciding, but we do not systematically reference how similar problems were handled in past projects.", g: 1},
-      {t: "Reactively — the most senior person available makes the call based on their experience; structured problem definition or team input is limited.", g: 2},
-      {t: "Ad hoc — decisions about problems are made quickly by whoever is closest to the issue, with little formal problem definition, reference to past projects, or broader team input.", g: 2}
+      {t: "Analytically — we define the problem, drawing on similar past projects, seek team input, and then evaluates options before deciding.", g: 0},
+      {t: "Consultatively — we gather views before deciding but do not reference how similar problems were handled before.", g: 1},
+      {t: "Reactively — the most senior person makes the call based on experience with limited team input.", g: 2},
+      {t: "Ad hoc — whoever is closest to the issue decides quickly with little problem definition or past reference.", g: 2}
     ]
   },
   /* Q7 — PEA pre-procurement, changed to "started" with adjusted options */
@@ -323,10 +323,10 @@ var Q = [
     key: "pea_pre",
     text: "How much did your institution learn about the disciplines, cultures, and working styles of partner firms before procurement started?",
     opts: [
-      {t: "Extensively — structured learning about each firm's culture, decision style, incentives, and prior cross-disciplinary performance was conducted before the procurement process opened.", g: 0},
-      {t: "Moderately — some background research was done on potential partners before procurement began, but it focused mainly on capability and track record rather than culture or working style.", g: 1},
-      {t: "Minimally — we gathered basic information on potential firms before procurement, but cultural, relational, and decision-style factors were not assessed.", g: 2},
-      {t: "Not at all — the procurement process itself was the first point of engagement; no learning about potential partners was undertaken beforehand.", g: 2}
+      {t: "Extensively — structured learning about each firm's culture, decision style, and incentives was conducted before the procurement process opened.", g: 0},
+      {t: "Moderately — some background research was done before procurement but focused on capability rather than culture or working style.", g: 1},
+      {t: "Minimally — basic information was gathered but cultural and decision-style factors were not assessed.", g: 2},
+      {t: "Not at all — procurement itself was the first point of engagement with potential partners.", g: 2}
     ]
   },
   /* Q8 — PEA during engagement — unchanged */
@@ -347,10 +347,10 @@ var Q = [
     key: "foresight",
     text: "When making project decisions, how well does your team explain, predict, or hypothesise the causal chain of events that a decision is likely to set in motion?",
     opts: [
-      {t: "Systematically — before committing, the team maps out the likely sequence of consequences the decision will trigger, identifies where the chain could break or branch, and stress-tests assumptions about cause and effect.", g: 0},
-      {t: "Partially — key decision-makers consider likely consequences informally, but the causal chain is not mapped, documented, or tested as a team before the decision is made.", g: 1},
-      {t: "Rarely — decisions are evaluated primarily on their immediate intent rather than the sequence of events they are likely to set in motion; downstream consequences emerge as surprises.", g: 2},
-      {t: "Not at all — causal thinking is not part of how decisions are made on this project; consequences are managed as they arise rather than anticipated before the decision is taken.", g: 2}
+      {t: "Systematically — we map the likely chain of consequences a decision will trigger and stress-test assumptions before committing.", g: 0},
+      {t: "Partially — key decision-makers consider likely consequences informally but the causal chain is not mapped as a team.", g: 1},
+      {t: "Rarely — decisions are evaluated on immediate intent; downstream consequences emerge as surprises.", g: 2},
+      {t: "Not at all — causal thinking is not part of our decision-making; consequences are managed as they arise.", g: 2}
     ]
   },
   /* Q10 — AI in decision intelligence */
@@ -359,9 +359,9 @@ var Q = [
     key: "ai_dec",
     text: "How does your organisation currently use AI to support decision-making on projects?",
     opts: [
-      {t: "Actively and deliberately — AI tools are used to analyse information, model decision scenarios, identify risks, and surface options that the team might not otherwise consider; outputs are reviewed critically before any decision is made.", g: 0},
-      {t: "Occasionally and informally — some team members use AI tools on an ad hoc basis for research or drafting, but AI is not formally embedded in the decision-making process.", g: 1},
-      {t: "Rarely — AI is not a meaningful part of how decisions are made on this project; most decision support comes from human experience and manual analysis.", g: 2},
+      {t: "Actively — AI tools analyse information, model decision scenarios, and surface options; outputs are reviewed critically before decisions are made.", g: 0},
+      {t: "Occasionally — some team members use AI tools informally but it is not embedded in the decision-making process.", g: 1},
+      {t: "Rarely — AI is not part of how decisions are made; we rely on human experience and manual analysis.", g: 2},
       {t: "Not at all — AI tools are not used in our project decision-making; we rely entirely on conventional methods and human judgement.", g: 2}
     ]
   }
